@@ -56,6 +56,26 @@ header{
     color: var(--background-color);
     font-size:2rem;
 }   
+
+.mobile-menu{
+    height:0px;
+    overflow:hidden;
+
+    transition: height 0.8s ease-in-out;
+}
+.mobile-menu ul{
+    list-style: none;
+}
+.mobile-menu li{
+    margin:1.5rem;
+}
+.mobile-menu li a{
+    text-decoration: none;
+    font: bold 0.9rem var(--primary-font);
+    color: var(--base-color);
+    text-transform: uppercase;
+}
+
 /* END HEADER */ 
 
 /* SECTION-SOCIALS */
@@ -211,6 +231,8 @@ header{
 .client-logo{
     margin-bottom: 5rem;
 }
+
+
 /* END SECTION CLIENTS */
 .talk-me{
     margin:0;
@@ -228,7 +250,6 @@ header{
 .descript-talk-me h4,p{
     margin-bottom:1.5rem;
 }
-
 .media-links{
     color: var(--paragraph-font-color);
     font-size: 2rem;
