@@ -1,0 +1,178 @@
+@media(min-width:800px){
+    
+    /* HEADER */
+    #logo img{
+        width:auto;
+    }
+    .mobile-menu{
+        display:none;
+    }
+    #menu-button i{
+        display:none;
+    }
+    .desktop-menu{
+        display: block;
+    }
+    .desktop-menu ul{
+        list-style: none;
+        display: flex;
+        height:100%;
+        align-items: center;
+    }
+    .desktop-menu li{
+        margin:1.2rem;
+    }
+    .desktop-menu li a{
+        text-decoration: none;
+        font: bold 0.9rem var(--primary-font);
+        color: var(--base-color);
+        text-transform: uppercase;
+    }
+
+    .desktop-menu li a:hover{
+        color: lightgrey;
+    }
+    /* END HEADER */
+}
+
+@media(min-width: 1200px){
+    :root{
+        font-size:17px;
+    }
+    /* LAYOUT */
+    p{
+        line-height: 1.8;
+    }
+    
+    .container{
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+    /* END-LAYOUT */
+
+    /* HEADER */
+    header{
+        margin-left:10rem;
+        margin-right: 5rem;
+        justify-content: space-around;
+        align-items: center;
+    }
+    hr, .socials{
+        visibility: hidden;
+    }
+    .socials-header{
+        display:flex;
+        margin-top: 1rem;
+        margin-right: 1.2rem;
+        align-items: center;
+    }
+    .socials-header a{
+        background-color: var(--base-color);
+        border:none;
+        border-radius: 1.8rem;
+        padding:0.3rem 0.5rem;
+        color:#ffff;
+        margin-left:1rem;
+        font-size:0.7rem;
+    }
+    /* END HEADER */
+
+    /* PRINCIPAL */
+    .principal{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom:5%;
+    }
+    .principal div{
+        width:50%;
+        margin-right: 3rem;
+    }
+    /* END PRINCIPAL */
+
+    /* SERVIÇOS */
+    .servicos{
+        display:flex;
+    }
+    .servicos .servico{
+        margin-left:2rem;
+    }
+    /* END SERVIÇOS */
+
+    /*  WHO ARE US */ 
+    .quem-somos{
+        display:flex;
+    }
+    .quem-somos div{
+        width:70%;
+    }
+    .quem-somos .preview-img{
+        width: 100%;
+    }
+    /* END WHO ARE US */ 
+
+    /*  FEEDBACK  */
+    .feedback{
+        margin:0;   
+    }   
+    .box-comments{
+        display:flex;
+        margin-left:10rem;
+        margin-right: 10rem;
+        justify-content: space-between;
+    }
+    .comment-feedback{
+        width: 30%;
+    }
+
+    .comment-feedback span{
+        display:inline-block;
+        height: 50px;
+        line-height: 1.6;
+        padding-bottom: 3.3rem;
+    }
+    /* END FEEDBACK  */
+
+    /*  CONTACTS  */
+    .container-contacts{
+        display:flex;
+    }
+    .lets-talk{
+        display:inline-flex;
+        flex-direction: column;
+        margin-left:4rem;
+        justify-content: center;
+    }
+    /*  END CONTACTS  */
+
+    /*  CLIENTS  */
+    .box-clients{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .client-logo{
+        margin-top:1.5rem;
+        margin-left:1.5rem;
+        width:30%;
+    }   
+    /*  END CLIENTS  */
+
+    /*  TALK-ME  */
+    .talk-me{
+        margin:0;
+    }
+    .box-descripts{
+        display:flex;
+        margin-left:10rem;
+        margin-right:10rem;
+    }
+
+
+    /*  END TALK-ME  */
+}
+
+@media(min-width: 2000px){
+    :root{
+        font-size: 24px;
+    }
+}

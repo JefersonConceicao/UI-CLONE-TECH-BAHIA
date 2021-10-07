@@ -11,35 +11,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/vendor/font-awesome/css/all.css"/>
     <link rel="stylesheet" href="src/css/app.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
 </head>
 <body>
+    <a href="#" class="primary-button" id="scroll-to-top">
+        <span> <i class="fa fa-angle-up"> </i> </span>
+    </a>
     <header> 
         <div id="logo">
             <img src="assets/img/logo_tech_bahia.png" alt="logo tipo tech-bahia"/>
         </div>
-        <div id="menu-buttom">
+        <div class="desktop-menu">
+            <ul> 
+                <li> <a href="#services"> Serviços </a> </li>
+                <li> <a href="#quem-somos"> Quem somos </a> </li>
+                <li> <a href="#contacts"> Contato </a>   </li>
+                <li> <a href="#clients"> Clientes </a> </li>
+            </ul>
+        </div>
+        <div class="socials-header">  
+            <a target="__blank" href="#">  
+                <i class="fab fa-facebook-f"> </i> 
+            </a>
+            <a targe="__blank" href="#"> 
+                <i class="fab fa-instagram"> </i> 
+            </a>
+        </div> 
+        <div id="menu-button">
             <i class="fa fa-bars"> </i>
         </div>
     </header>
     <hr/>
     <div class="mobile-menu">
         <ul> 
-            <li> <a href="#services"> Serviços </a></li> 
-            <li> <a href="#quem-somos"> Quem somos </a></li>
+            <li> <a href="#services"> Serviços </a> </li> 
+            <li> <a href="#quem-somos"> Quem somos </a> </li>
             <li> <a href="#contacts"> Contato </a> </li> 
             <li> <a href="#clients"> Clientes </a> </li> 
         </ul>
     </div>
     <section class="container socials">
-        <button> <i class="fab fa-facebook-f"> </i> </button>
-        <button> <i class="fab fa-instagram"> </i> </button>
+        <a target="__blank" href="#"> <i class="fab fa-facebook-f"> </i> </a>
+        <a target="__blank" href="#"> <i class="fab fa-instagram"> </i> </a>
     </section>
-    <main class="container principal"> 
-        <h1> Está com problemas técnicos? </h1> 
-        <p> Não sofra com computadores lentos, celulares quebrados, câmeras que não funcionam, nos mande uma mensagem e vamos bater um papo.</p> 
-        <a href="#" class="primary-button" type="buttton"> 
-            <span> Fale Conosco </span>
-        </a>
+    <main class="container principal">
+        <div>
+            <h1> Está com problemas técnicos? </h1> 
+            <p> Não sofra com computadores lentos, celulares quebrados, câmeras que não funcionam, nos mande uma mensagem e vamos bater um papo.</p> 
+            <a href="#" class="primary-button" type="buttton"> 
+                <span> Fale Conosco </span>
+            </a>
+        </div> 
         <div class="preview-img">
             <img src="assets/img/note_home-WBM.png" alt="notebook cartoon" /> 
         </div>
@@ -79,6 +101,7 @@
         </div>
     </section>
     <section class="container quem-somos" id="quem-somos">
+        <div>
         <h1> Quem somos?</h1> 
         <p>   
             Fundada a mais de 10 anos, a <b> TECH BAHIA </b> é uma empresa de serviçoes em tecnologia, 
@@ -86,6 +109,7 @@
             Com uma grande reputação no mercado, buscamos sempre desenvolver nossos colaboradores para as transformações digitais,
             e garantindo sempre estar à frente em soluções para melhor atender cada cleinte, de modo único e personalizado.
         </p>
+        </div>
         <div class="preview-img">
             <img src="assets/img/sala_manutencao.png" />
         </div>
@@ -95,130 +119,142 @@
             <h1> Oque falam de nós?</h1>
             <p> Declarações de pessoas que precisaram de nossa ajuda e obtivemos ótimos feedbacks.</p>
         </div>
-        <div class="comment-feedback">
-            <span> "Recebi um ótimo atendimento e o serviço ficou impecável. Agradeço pelo conserto do meu notebook, está novo novamente!!" </span>
+        <div class="box-comments">
+            <div class="comment-feedback">
+                <span> "Recebi um ótimo atendimento e o serviço ficou impecável. Agradeço pelo conserto do meu notebook, está novo novamente!!" </span>
+                <h3> Murilo Henrique </h3>
+            </div>
+           
+            <div class="comment-feedback">
+                <span> "Excelentes técnicos, ótimo atendimento manutenção rápida e de ótima qualidade" </span>
+                <h3> Carlos Júnior </h3>
+            </div>
+          
+            <div class="comment-feedback">
+                <span> "Empresa séria com ótimo atendimento e serviço. Fiquei satisfeita!" </span>
+                <h3> Priscylla Silva</h3>
+            </div>
         </div>
-        <h3> Murilo Henrique </h3>
-        <div class="comment-feedback">
-            <span> "Excelentes técnicos, ótimo atendimento manutenção rápida e de ótima qualidade" </span>
-        </div>
-        <h3> Carlos Júnior </h3>
-        <div class="comment-feedback">
-            <span> "Empresa séria com ótimo atendimento e serviço. Fiquei satisfeita!"
-        </div>
-        <h3> Priscylla Silva</h3>
     </section>
     <section class="container contacts" id="contacts">
         <h1> Informações </h1>
         <p> Estamos sempre a disposição para melhor atendê-los.</p>  
 
-        <div class="box-contacts">
-            <div class="contact phone"> 
-                <div class="icon-contact">
-                    <i class="fas fa-phone"> </i>
-                </div>
-                <div class="text-contact">
-                    <h4> Telefone para ligação </h4>
-                    <p> O número que utilizamos para contato é o 
-                        <b> (71) 3018-0212 </b>, estaremos disponíveis
-                        nos horários das 09 às 18 horas de Segunda à Sexta
-                        e 09 a 13 horas no Sábado.    
-                    </p>
-                </div>
-            </div> 
-            <div class="contact mail"> 
-                <div class="icon-contact">
-                    <i class="fas fa-envelope-open"> </i>
-                </div>
-                <div class="text-contact">
-                    <h4> E-mail para contato </h4>
-                    <p> Para esclarecer dúvidas, enviar sugestões, críticas 
-                        ou parcerias nos envie um e-mail para o seguinte
-                        endereço </br>
-                        <b> atendimento@techbahia.com.br </b> 
-                    </p>
-                </div>
-            </div> 
-            <div class="contact location"> 
-                <div class="icon-contact">
-                    <i class="fas fa-street-view"></i>
-                </div>
-                <div class="text-contact">
-                    <h4> Nossa localização </h4>
-                    <p> 
-                       Ficamos na <b> Alameda Carrara, 92 -02, 
-                       Pituba, Salvador - BA, 41830-590 </b> próximo ao fundo da 
-                       Escola Colmeia. 
-                    </p>
-                </div>
-            </div> 
+        <div class="container-contacts">
+            <div class="box-contacts">
+                <div class="contact phone"> 
+                    <div class="icon-contact">
+                        <i class="fas fa-phone"> </i>
+                    </div>
+                    <div class="text-contact">
+                        <h4> Telefone para ligação </h4>
+                        <p> O número que utilizamos para contato é o 
+                            <b> (71) 3018-0212 </b>, estaremos disponíveis
+                            nos horários das 09 às 18 horas de Segunda à Sexta
+                            e 09 a 13 horas no Sábado.    
+                        </p>
+                    </div>
+                </div> 
+                <div class="contact mail"> 
+                    <div class="icon-contact">
+                        <i class="fas fa-envelope-open"> </i>
+                    </div>
+                    <div class="text-contact">
+                        <h4> E-mail para contato </h4>
+                        <p> Para esclarecer dúvidas, enviar sugestões, críticas 
+                            ou parcerias nos envie um e-mail para o seguinte
+                            endereço </br>
+                            <b> atendimento@techbahia.com.br </b> 
+                        </p>
+                    </div>
+                </div> 
+                <div class="contact location"> 
+                    <div class="icon-contact">
+                        <i class="fas fa-street-view"></i>
+                    </div>
+                    <div class="text-contact">
+                        <h4> Nossa localização </h4>
+                        <p> 
+                        Ficamos na <b> Alameda Carrara, 92 -02, 
+                        Pituba, Salvador - BA, 41830-590 </b> próximo ao fundo da 
+                        Escola Colmeia. 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+            <div class="lets-talk">
+                <h1> Vamos Conversar! </h1>
+                <p> Para esclarecer dúvidas, enviar sugestões ou críticas 
+                    fale consoco diretamente via Whats-app, clique neste botão
+                    abaixo que você será redirecionado automaticamente para nosso
+                    número, ou se preferir, nos envie uma mensagem no número <br/>
+                    <b> (71) 98847-0415. </b> 
+                </p>
+                <a href="#" class="success-button">
+                    <span> Clique Aqui </span>
+                </a>
+            </div>
         </div>
     </section>
-    <section class="container lets-talk">
-        <h1> Vamos Conversar! </h1>
-        <p> Para esclarecer dúvidas, enviar sugestões ou críticas 
-            fale consoco diretamente via Whats-app, clique neste botão
-            abaixo que você será redirecionado automaticamente para nosso
-            número, ou se preferir, nos envie uma mensagem no número <br/>
-            <b> (71) 98847-0415. </b> 
-        </p>
-        <a href="#" class="success-button">
-            <span> Clique Aqui </span>
-        </a>
-    </section>
+
     <section class="container clients" id="clients">
         <h1> Clientes </h1>
         <p> Empresas que depositaram diariamente a confiança em nosso trabalho. </p>
-    
-        <div class="client-logo">
-            <img src="assets//img/clients/mrv_engenharia.png" alt="logotipo mv-engenharia" />
-        </div>
-        <div class="client-logo">
-            <img src="assets//img/clients/sesc_bahia.png" alt="logotipo sesc-bahia" />
-        </div>
-        <div class="client-logo">
-            <img src="assets//img/clients/shoulder.png" alt="logotipo shoulder" />
-        </div>
-        <div class="client-logo">
-            <img src="assets//img/clients/uesb.png" alt="logotipo uesb" />
-        </div>
-        <div class="client-logo">
-            <img src="assets//img/clients/corpo_bombeiros.png" alt="logotipo corpo_bombeiros" />
-        </div>
-        <div class="client-logo">
-            <img src="assets//img/clients/vera_cruz.png" alt="logotipo vera_cruz" />
+        
+        <div class="box-clients">
+            <div class="client-logo">
+                <img src="assets//img/clients/mrv_engenharia.png" alt="logotipo mv-engenharia" />
+            </div>
+            <div class="client-logo">
+                <img src="assets//img/clients/sesc_bahia.png" alt="logotipo sesc-bahia" />
+            </div>
+            <div class="client-logo">
+                <img src="assets//img/clients/shoulder.png" alt="logotipo shoulder" />
+            </div>
+            <div class="client-logo">
+                <img src="assets//img/clients/uesb.png" alt="logotipo uesb" />
+            </div>
+            <div class="client-logo">
+                <img src="assets//img/clients/corpo_bombeiros.png" alt="logotipo corpo_bombeiros" />
+            </div>
+            <div class="client-logo">
+                <img src="assets//img/clients/vera_cruz.png" alt="logotipo vera_cruz" />
+            </div>
         </div>
     </section>
     <section class="container talk-me" id="talk-me">   
-        <div class="descript-talk-me">
-            <h4> Fale Consoco </h4>
-            <p> Fale conosco via Whats app,só clicar no abaixo e será 
-                redirecionado automaticamente.
-            </p>
-            <a href="#" class="success-button">
-                <span> Clique aqui </span>
-            </a>
-        </div>
-        <div class="descript-talk-me">
-            <h4> Estamos nas Mídias </h4>
-            <p> 
-                Nos acompanhe em nossas redes sociais para ficar 
-                por dentro das novidades em primeira mão.     
-            </p> 
-            <div class="media-links">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
+        <div class="box-descripts">
+            <div class="descript-talk-me">
+                <h4> Fale Consoco </h4>
+                <p> Fale conosco via Whats app,só clicar no abaixo e será 
+                    redirecionado automaticamente.
+                </p>
+                <a href="#" class="success-button">
+                    <span> Clique aqui </span>
+                </a>
+            </div>
+            <div class="descript-talk-me">
+                <h4> Estamos nas Mídias </h4>
+                <p> 
+                    Nos acompanhe em nossas redes sociais para ficar 
+                    por dentro das novidades em primeira mão.     
+                </p> 
+                <div class="media-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="descript-talk-me"> 
+                <h4> Localização </h4>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!4v1633570443690!6m8!1m7!1sFbIAPqpo-Hhi963wdd-L3Q!2m2!1d-13.00077516815449!2d-38.46111642451726!3f146.1288091409779!4f6.521170089974973!5f0.7820865974627469" 
+                    style="border:0;" 
+                    loading="lazy"
+                ></iframe>
             </div>
         </div>
-        <div class="descript-talk-me"> 
-            <h4> Localização </h4>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!4v1633570443690!6m8!1m7!1sFbIAPqpo-Hhi963wdd-L3Q!2m2!1d-13.00077516815449!2d-38.46111642451726!3f146.1288091409779!4f6.521170089974973!5f0.7820865974627469" 
-                style="border:0;" 
-                loading="lazy"
-            ></iframe>
-        </div>
     </section>
+
     <script src="src/js/index.js"> </script>
 </body>
 </html>

@@ -1,5 +1,13 @@
-window.onload = () => {
-    configCollapse()
+const buttonLinks = () => {
+    const button = document.querySelectorAll('.success-button');
+
+    button.forEach(element => {
+        element.addEventListener('click', function(e){
+            e.preventDefault();
+
+            alert("action link whatsapp");
+        })
+    })
 }
 
 const configCollapse = () => {
@@ -15,4 +23,22 @@ const configCollapse = () => {
             menuMobile.style.height = 0+'px';
         }
     }
+}
+
+const scrollEvent = () => {
+    window.addEventListener('scroll', function(e){
+        const scrollToTOP = document.getElementById('scroll-to-top');
+        
+        if(window.scrollY > 0){
+            scrollToTOP.style.display = 'block';
+        }else{
+            scrollToTOP.style.display = 'none';
+        }
+    });
+}
+
+window.onload = () => {
+    scrollEvent()
+    configCollapse()
+    buttonLinks()
 }
