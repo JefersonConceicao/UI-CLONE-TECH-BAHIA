@@ -1,5 +1,4 @@
 @media(min-width:800px){
-    
     /* HEADER */
     #logo img{
         width:auto;
@@ -36,9 +35,6 @@
 }
 
 @media(min-width: 1200px){
-    :root{
-        font-size:17px;
-    }
     /* LAYOUT */
     p{
         line-height: 1.8;
@@ -172,7 +168,16 @@
 }
 
 @media(min-width: 2000px){
-    :root{
-        font-size: 24px;
+    .principal,
+    .our-services, 
+    .quem-somos,
+    .contacts,
+    .clients{
+        width:1500px;
+        margin:2% auto;
+    }
+
+    .talk-me{
+        padding-top:10rem;
     }
 }
